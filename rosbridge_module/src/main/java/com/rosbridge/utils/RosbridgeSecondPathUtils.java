@@ -14,20 +14,20 @@ import public_pkg.heart_beat_msg;
  * rosbridge通讯工具，连接，发布，订阅，调用服务
  * @param <T>
  */
-public class RosbridgeUtils<T extends Message> {
+public class RosbridgeSecondPathUtils<T extends Message> {
     private ROSBridgeClient client;
-    private volatile static RosbridgeUtils instance;
-    private RosbridgeUtils(){}
+    private volatile static RosbridgeSecondPathUtils instance;
+    private RosbridgeSecondPathUtils(){}
 
     /**
      * 获取单例
      * @return
      */
-    public static RosbridgeUtils getInstance() {
+    public static RosbridgeSecondPathUtils getInstance() {
         if (instance == null) {
-            synchronized (RosbridgeUtils.class) {
+            synchronized (RosbridgeSecondPathUtils.class) {
                 if (instance == null) {
-                    instance = new RosbridgeUtils();
+                    instance = new RosbridgeSecondPathUtils();
                 }
             }
         }
@@ -103,6 +103,7 @@ public class RosbridgeUtils<T extends Message> {
                 if(connectCallback!=null){
                     connectCallback.onConnect();
                 }
+                Logger.e("Connect ROS success");
             }
 
 
@@ -111,6 +112,7 @@ public class RosbridgeUtils<T extends Message> {
                 if(connectCallback!=null){
                     connectCallback.onDisconnect(normal,reason,code);
                 }
+                Logger.e("ROS disconnect");
             }
 
             @Override
@@ -118,6 +120,7 @@ public class RosbridgeUtils<T extends Message> {
                 if(connectCallback!=null){
                     connectCallback.onError(ex);
                 }
+                Logger.e("ROS communication error:"+ex.getMessage());
             }
         },messageCallback);
     }
