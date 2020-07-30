@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:title="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<sz.container.nr.com.common.view.TitleView-->
+        <!--android:id="@+id/title_main"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#0093fe"-->
+        <!--title:left_text="返回"-->
+        <!--title:left_text_drawable_left="@mipmap/back_normal"-->
+        <!--title:small_text_size="15sp"-->
+        <!--title:title_name="@string/title_name"-->
+        <!--title:title_text_color="@android:color/white"-->
+        <!--title:title_text_size="20sp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <com.dadac.testrosbridge.camera.RosCameraPreviewView
+                android:id="@+id/ros_camera_preview_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_capture"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="拍照" />
+
+        <Button
+            android:id="@+id/bt_advertise"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="发布前注册主题" />
+        <Button
+            android:id="@+id/bt_publish"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="发布" />
+        <Button
+            android:id="@+id/bt_subscribe"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="订阅" />
+    </LinearLayout>
+</LinearLayout>

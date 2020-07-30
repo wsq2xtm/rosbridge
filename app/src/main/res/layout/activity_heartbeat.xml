@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/start_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始订阅心跳"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/subscribe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅节点1"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/subscribe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅节点2"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/subscribe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订阅节点3"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/cancelSubscribe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消订阅节点1"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/cancelSubscribe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消订阅节点2"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/cancelSubscribe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消订阅节点3"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_ShowData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000000" />
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/DC_Button_JumpToRosSubPub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到普通消息订阅和发布"
+        android:onClick="JumpToSubPubActivity"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/DC_Button_JumpToRosCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到视频订阅界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToCameraReceivedActivity"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/DC_Button_JumpToSendCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到视频发布界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToCameraSendActivity"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到机械臂控制界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToTelepArmActivity"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到键盘控制运动界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToTelepMoveActivity"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到机器人模型界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToURDFActivity"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到2d地图界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpTo2DActivity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转到心跳测试界面"
+        android:layout_marginLeft="15dp"
+        android:onClick="JumpToHeartbeatActivity"
+        android:visibility="gone"
+        />
+</LinearLayout>
